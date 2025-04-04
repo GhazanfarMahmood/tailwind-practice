@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Red_Rose, Sora } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/UI/nav-bar";
+import Footer from "@/components/UI/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const sora = Sora({
+  variable : "--font-sora",
+  weight : ["400", "700"],
+  subsets : ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const redRose = Red_Rose({
+  variable : "--font-rose",
+  weight : ["400", "700"],
+  subsets : ['latin']
 });
 
 export const metadata = {
@@ -20,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sora.variable} ${redRose.variable} antialiased`}
       >
-        {children}
+        <NavBar/>
+          {children}
+        <Footer />
       </body>
     </html>
   );

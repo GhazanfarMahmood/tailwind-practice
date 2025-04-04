@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --container-size : 1230px;
+  --container-size-lg : 1110px;
+  --container-size-md : 930px;
+  --padding-inline : 15px;
+  --c-primary: #2da884;
+  --c-secondary : #292929;
+  --c-filter : brightness(0) saturate(100%) invert(47%) sepia(96%) saturate(312%) hue-rotate(112deg) brightness(97%) contrast(87%);
+  --c-white : brightness(0) saturate(100%) invert(95%) sepia(7%) saturate(0%) hue-rotate(262deg) brightness(107%) contrast(101%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-primaries : var(--font-sora);
+  --font-secondary : var(--font-rose);
+  --color-primary : var(--c-primary);
+  --color-secondary : var(--c-secondary);
+  --breakpoint-* :initial;
+  --breakpoint-sm-mobile : 29rem;     /* 464px */
+	--breakpoint-mobile : 36rem;        /* 576px */
+	--breakpoint-tablet : 48rem;        /* 768px */
+  --breakpoint-sm-tablet: 62rem;      /* 992px */
+	--breakpoint-laptop : 64rem;        /* 1024px */
+	--breakpoint-desktop : 75rem;       /* 1200px */
+  --color-filter : var(--c-filter);
+  --color-whites : var(--c-white);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+body {
+  font-family: var(--font-sora);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65em;
+  transition: all ease-in 0.2s;
+  color: var(--c-secondary);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-rose);
+}
+a {
+  font-family: var(--font-rose);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: var(--container-size);
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+}
+
+@media (max-width: 1200px) {
+    :root {
+      --container-size : var(--container-size-lg);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 991px) {
+    :root {
+      --container-size : var(--container-size-md);
+  }
+  a {
+    font-size: 14px;
+  }
 }
+

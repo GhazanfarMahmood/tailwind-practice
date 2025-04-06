@@ -13,7 +13,7 @@ export default function Banner(){
                     <Image src={"/images/hero-img.jpg"} alt="hero-section-image" width={840} height={699} className="w-full h-full object-cover" />
                 </div>
             </div>
-            <a href="#" className="w-fit h-fit d-flex items-center justify-center absolute inset-0 mt-auto  ml-auto mb-[60px] mr-5 mobile:mr-[53px] min-[1600px]:mr-0 bg-primary p-[16px_22px] mobile:p-[29px_35px]" >
+            <a href="#" className="w-fit h-fit d-flex items-center justify-center absolute inset-0 mt-auto  ml-auto mb-[60px] mr-5 mobile:max-[1600px]:mr-[53px]  bg-primary p-[16px_22px] mobile:p-[29px_35px]" >
                 <Image src={"/images/icons/arrow-down.svg"} alt="down-arrow" width={34} height={34} className="filter-(--c-white)" />
             </a>
         </div>

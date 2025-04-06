@@ -87,7 +87,7 @@ export default function Footer() {
             </div>
             <div className="py-[30px] tablet:py-[47px]">
                 <div 
-                className="container grid grid-cols-1 tablet:grid-cols-2 gap-4 tablet:gap-[50px] place-items-center"
+                className="container grid grid-cols-1 tablet:grid-cols-2 gap-4 tablet:gap-[50px] place-items-center place-items"
                 >
                     <p 
                     className="text-white text-[15px] leading-[1.65em] text-center tablet:text-left"

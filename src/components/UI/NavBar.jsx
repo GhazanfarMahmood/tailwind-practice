@@ -58,7 +58,7 @@ export default function NavBar() {
                                 <Image src={"/images/icons/cart.svg"} alt="cart-icon" width={20} height={20} />
                                 <span className="w-[18px] h-[18px] flex items-center justify-center text-white font-bold text-[11px] rounded-full absolute top-[-4px] right-[-8px] bg-black shadow-[1px_1px_3px_0px_rgba(0,0,0,0.3)] leading-[17px] tracking-[-0.5px] cursor-pointer">0</span>
                             </button>
-                            <div className="w-[280px] bg-white border border-solid border-[#dddddd] absolute top-[110%] right-0 left-auto cursor-default transition duration-200 ease-in invisible opacity-0 group-hover:visible group-hover:opacity-[1]">
+                            <div className="w-[280px] bg-white border border-solid border-[#dddddd] absolute top-[110%] right-0 left-auto cursor-default transition duration-200 ease-in invisible opacity-0 group-hover:visible group-hover:opacity-[1] z-[1]">
                                 <span className="block text-center text-[13px] mt-[18px]">No products in the cart.</span>
                                 <Link href={"/"} className="flex items-center justify-center font-bold capitalize text-primary border border-solid border-primary m-[18px] px-[30px] py-[15px] leading-[1em] cursor-pointer hover:bg-primary hover:text-white transition duration-200 ease-in ">Continue Shopping</Link>
                             </div>

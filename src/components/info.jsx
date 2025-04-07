@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Info(){
     return (
-        <section className="container py-[30px_100px]">
+        <section className="container py-[30px_30px] tablet:py-[30px_50px] sm-tablet:py-[30px_100px]">
             <div className="grid grid-cols-1 tablet:grid-cols-2 gap-[20px_20px] laptop:gap-[40px_60px]">
                 <div className="bg-[url(/images/info-img1.jpg)] bg-no-repeat bg-center bg-cover">
                     <span className="block p-[40px_0_350px_40px]">

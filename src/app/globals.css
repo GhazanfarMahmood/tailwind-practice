@@ -9,6 +9,7 @@
   --c-secondary : #292929;
   --c-filter : brightness(0) saturate(100%) invert(47%) sepia(96%) saturate(312%) hue-rotate(112deg) brightness(97%) contrast(87%);
   --c-white : brightness(0) saturate(100%) invert(95%) sepia(7%) saturate(0%) hue-rotate(262deg) brightness(107%) contrast(101%);
+  --c-shadow : 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @theme inline {
@@ -25,6 +26,7 @@
 	--breakpoint-desktop : 75rem;       /* 1200px */
   --color-filter : var(--c-filter);
   --color-whites : var(--c-white);
+  --shadow-cart : var(--c-shadow);
 }
 
 

@@ -1,7 +1,7 @@
 import { Red_Rose, Sora } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/UI/nav-bar";
-import Footer from "@/components/UI/footer";
+import NavBar from "@/components/UI/NavBar";
+import Footer from "@/components/UI/Footer";
 
 const sora = Sora({
   variable : "--font-sora",

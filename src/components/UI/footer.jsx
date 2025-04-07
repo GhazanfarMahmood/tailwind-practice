@@ -90,7 +90,7 @@ export default function Footer() {
                 className="container grid grid-cols-1 tablet:grid-cols-2 gap-4 tablet:gap-[50px] place-items-center place-items"
                 >
                     <p 
-                    className="text-white text-[15px] leading-[1.65em] text-center tablet:text-left"
+                    className="text-white text-[15px] leading-[1.65em] text-center tablet:text-left mr-0 tablet:mr-auto"
                     >Copyright © 2025 Antiques | Powered by Antiques</p>
                     <Image src={"/images/payment.png"} alt="card-icon" width={185} height={22} className="block mx-auto tablet:ml-auto tablet:mx-0 desktop:ml-auto desktop:mx-0" />
                 </div>

@@ -1,5 +1,15 @@
+import AboutAd from "@/components/AboutAd";
+import AboutAuthor from "@/components/AboutAuthor";
+import AboutBanner from "@/components/AboutBanner";
+import MoreAbout from "@/components/MoreAbout";
+
 export default function AboutUs() {
     return (
-        <h1>About Page</h1>
+        <>
+            <AboutBanner />
+            <MoreAbout />
+            <AboutAuthor />
+            <AboutAd />
+        </>
     )
 }

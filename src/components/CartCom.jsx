@@ -62,7 +62,7 @@ export default function CartCom(){
                             <span>Total</span>
                             <span>$13.00</span>
                         </div>
-                        <Link href={"/check-out"} className="w-full flex items-center justify-center block font-secondary font-bold bg-primary text-white p-[15px_30px] leading-[1em] transition duration-200 ease-in hover:bg-[#127b5d] cursor-pointer text-nowrap mt-[20px]">Proceed to checkout</Link>
+                        <Link href={"/check-out"} className="w-full flex items-center justify-center font-secondary font-bold bg-primary text-white p-[15px_30px] leading-[1em] transition duration-200 ease-in hover:bg-[#127b5d] cursor-pointer text-nowrap mt-[20px]">Proceed to checkout</Link>
                     </div>
                 </div>
             </section>
